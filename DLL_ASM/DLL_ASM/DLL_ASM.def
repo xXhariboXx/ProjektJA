@@ -1,0 +1,10 @@
+
+;------------------------------------------------------------------------- 
+; Projekt JA
+; Dominik R¹czka (JA_2016_gr1)
+; Projekt: JA_D.Raczka_Rozwiazywanie_URL
+; Wersja: 1.1
+;-------------------------------------------------------------------------
+
+LIBRARY DLL_ASM
+EXPORTS calculateASM

@@ -1,0 +1,14 @@
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\Main.csprojResolveAssemblyReference.cache
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\MainWindow.g.cs
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\App.g.cs
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\MainWindow.baml
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\Main.csproj.GenerateResource.Cache
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\bin\x64\Debug\URL Application.exe.config
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\bin\x64\Debug\URL Application.exe
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\bin\x64\Debug\URL Application.pdb
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\URL Application_MarkupCompile.cache
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\URL Application_MarkupCompile.lref
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\URL Application.g.resources
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\URLApplication.Properties.Resources.resources
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\URL Application.exe
+F:\OneDrive\Studia\JA [proj]\Mój projekt\URL Application\URL Application\obj\x64\Debug\URL Application.pdb

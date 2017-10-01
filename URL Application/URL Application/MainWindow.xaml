@@ -1,0 +1,45 @@
+﻿<!-- ************************************************************
+    Projekt JA
+    Dominik Rączka(JA_2016_gr1)
+    Projekt: JA_D.Raczka_Rozwiazywanie_URL
+    Wersja: 1.1
+    ************************************************************* -->
+    <Window x:Class="URLApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Name="Main_window"
+        Title="MainWindow" Height="550" Width="850">
+    <Grid Height="Auto" Margin="0,0,0,0" Width="Auto">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF4840E0" Offset="1"/>
+                <GradientStop Color="#FF3E88E0" Offset="0.018"/>
+                <GradientStop Color="#FF6A66CF" Offset="0.593"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <DataGrid x:Name="equationsDatagrid" Margin="0,36,30,0" VerticalAlignment="Top" Height="Auto" Width="Auto" BorderThickness="3" CanUserAddRows="False" CanUserDeleteRows="False" SelectionUnit="Cell" EnableRowVirtualization="False" IsManipulationEnabled="True" AutoGenerateColumns="False" BorderBrush="Black" HorizontalAlignment="Right" RenderTransformOrigin="-12.594,1.294" Visibility="Hidden" FrozenColumnCount="1" CanUserReorderColumns="False" CanUserSortColumns="False"/>
+        <DataGrid x:Name="resultDatagrid" Margin="0,0,30,24" VerticalAlignment="Bottom" Height="Auto" Width="Auto" BorderThickness="3" CanUserAddRows="False" CanUserDeleteRows="False" SelectionUnit="Cell" EnableRowVirtualization="False" IsManipulationEnabled="True" AutoGenerateColumns="False" RenderTransformOrigin="-1.2,0.273" HorizontalAlignment="Right" FontSize="14" BorderBrush="Black" Visibility="Hidden" CanUserReorderColumns="False" CanUserSortColumns="False" RowBackground="#FFF0DC7A"/>
+        <Label x:Name="resultLbl" Content="Wynik" HorizontalAlignment="Right" Margin="0,0,30,80" VerticalAlignment="Bottom" Width="70" Background="#FFF1DC7A" BorderBrush="Black" BorderThickness="3" FontSize="16" FontWeight="Bold" Visibility="Hidden"/>
+        <Button x:Name="createMatrixBtn" Content="Zatwierdź" Height="33" Margin="207,58,0,0" Width="116" Click="createMatrixBtn_Click" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Book Antiqua" Background="White" BorderThickness="3" BorderBrush="Black"/>
+        <TextBox x:Name="equationSizeTxtBox" Height="Auto" Margin="37,65,0,0" TextWrapping="Wrap" Width="118" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" Background="#FFF1DC7A" BorderThickness="3" FontSize="14" FontWeight="Bold" TextAlignment="Center">
+        </TextBox>
+        <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="110" Margin="24,160,0,199" VerticalAlignment="Center" Width="296" Background="#FFF1DC7A" CornerRadius="10"/>
+        <CheckBox x:Name="dllAsmChbx" Content="DLL ASM" Height="18" Margin="37,166,0,246" Width="Auto" Checked="dllAsmChbx_Checked" Unchecked="dllChbx_Unchecked" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        <CheckBox x:Name="dllCChbx" Content="DLL C" Height="18" Margin="37,192,0,220" Width="Auto" Checked="dllCChbx_Checked" Unchecked="dllChbx_Unchecked" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        <CheckBox x:Name="dllCompChbx" Content="Test porównawczy" Height="20" Margin="37,215,0,195" Width="Auto" Checked="dllCompChbx_Checked" Unchecked="dllChbx_Unchecked" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="calculateBtn" Content="Licz" Height="28" Margin="207,202,0,239" Width="80" Click="calculateBtn_Click" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" FontFamily="Bookman Old Style" Background="White" BorderThickness="3" BorderBrush="Black"/>
+        <Label x:Name="equationSizeLbl" Content="Podaj liczbę niewiadomych" Height="33" Margin="37,20,0,0" Width="213" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Grid x:Name="timeGrid" Height="128" Margin="24,0,0,24" Width="290" HorizontalAlignment="Left" VerticalAlignment="Bottom" OpacityMask="Black" Visibility="Hidden">
+            <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="129" VerticalAlignment="Top" Width="290" CornerRadius="10" Background="#FFF1DC7A"/>
+            <Label x:Name="executionTimeLbl" Content="Czas wykonania" HorizontalAlignment="Left" Height="43" VerticalAlignment="Top" Width="137" Margin="54,10,0,0" FontSize="16" FontWeight="Bold"/>
+            <Label x:Name="asmExecutionTimeLbl" Content="Czas wykonania ASM:" HorizontalAlignment="Left" Height="31" Margin="10,43,0,0" VerticalAlignment="Top" Width="150" FontSize="14"/>
+            <Label x:Name="cExecutionTimeLbl" Content="Czas wykonania C:" HorizontalAlignment="Left" Height="31" Margin="10,79,0,0" VerticalAlignment="Top" Width="150" FontSize="14"/>
+            <Label x:Name="asmTimeLbl" Content="" HorizontalAlignment="Left" Height="26" Margin="187,48,0,0" VerticalAlignment="Top" Width="78" FontSize="14" FontWeight="Bold" Background="#4C000000" Foreground="#FFE60000"/>
+            <Label x:Name="cTimeLbl" Content="" HorizontalAlignment="Left" Height="26" Margin="187,84,0,0" VerticalAlignment="Top" Width="78" FontSize="14" FontWeight="Bold" Foreground="#FFE60000" Background="#4C000000"/>
+        </Grid>
+    </Grid>
+</Window>
